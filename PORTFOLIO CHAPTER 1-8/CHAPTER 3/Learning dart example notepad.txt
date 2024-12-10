@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Chapter 3 Layout Example',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Chapter 3 Layout'),
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Welcome to Flutter!',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.favorite, color: Colors.red, size: 40),
+                Icon(Icons.star, color: Colors.amber, size: 40),
+                Icon(Icons.thumb_up, color: Colors.blue, size: 40),
+              ],
+            ),
+            SizedBox(height: 20),
+            Container(
+              padding: EdgeInsets.all(16.0),
+              color: Colors.lightBlueAccent,
+              child: Text(
+                'This is a simple layout with some text, icons, and spacing.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16, color: Colors.white),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

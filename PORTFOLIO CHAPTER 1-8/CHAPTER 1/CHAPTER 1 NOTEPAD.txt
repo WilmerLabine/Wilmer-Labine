@@ -1,0 +1,4 @@
+CHAPTER 1
+
+Flutter is Google's UI framework for building modern, reactive, and cross-platform applications (iOS, Android, Web, Desktop) using a single codebase. It uses Dart as its programming language and a widget-based architecture to define UI.
+I begin by installing Flutter, setting up the development environment, and configuring Android Studio or Visual Studio Code.
